@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3
 
-RUN apt update -y && apt install build-essential git libgraphviz-dev -y
+RUN apt update -y && apt install build-essential git libgraphviz-dev libgl1-mesa-glx -y
 
 RUN useradd swan && mkdir /home/swan && chown swan:swan /home/swan
 
